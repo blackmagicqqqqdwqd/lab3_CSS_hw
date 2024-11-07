@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>table</title>
+  </head>
+
+  <body>
+    
+    <h1 align="center">Самые большие города мира</h1>
+    <hr align="center" width="100%">
+    <ul>
+      <li><a href="index.html">Главная страница</a></li>
+      <li><a href="table.html">Таблица самых крупных городов мира</a></li>
+    </ul>
+    <!-- Формы -->
+    <details>
+      <summary>График</summary>
+      <form>
+        <table width="70%">
+          <tr>
+            <th align="center">Значение по оси 0X</th>
+            <th align="center">Результат</th>
+          </tr>
+          <tr>
+            <td align="left" valign="top">
+              <input type="radio" name="gender1" value="w">Город<br>
+              <input type="radio" name="gender1" value="m">Континент<br>
+            </td>
+            <td align="left" valign="top">
+              <input type="checkbox" name="language" value="0">Средняя плотность населения <br>
+              <input type="checkbox" name="language" value="1">Суммарное население<br>
+              <input type="checkbox" name="language" value="2">Суммарная площадь<br>
+            </td>
+          </tr>
+        </table>
+        <input type="button" value="Построить">
+        <p>Здесь будет график</p>
+      </form>
+    </details>
+    <details>
+      <summary>Фильтр</summary>
+      <form>
+        <p>Город <input type="text" name="text_1"></p>
+        <p>Континент <input type="text" name="text_2"></p>
+        <p>Страна <input type="text" name="text_3"></p>
+        <p>Население от <input type="number" name="number_1"> до <input type="number" name="number_2"></p>
+        <p>Площадь от <input type="number" name="number_3"> до <input type="number" name="number_4"></p>
+        <p>Плотность населения от <input type="number" name="number_5"> до <input type="number" name="number_6"></p>
+        <input type="button" value="Найти">
+      </form>
+    </details>
+    <details>
+      <summary>Сортировка</summary>
+      <form>
+        <p>Первый уровень():
+          <select name="language1">
+            <option value="0" selected>Нет</option>
+            <option value="1">Население</option>
+            <option value="2">Площадь</option>
+            <option value="3">Место</option>
+            <option value="4">Город</option>
+            <option value="5">Континент</option>
+            <option value="6">Плотность населения</option>
+          </select>
+          по убыванию?<input type="checkbox" name="t2" value="True">
+        </p>
+        <p>Первый уровень():
+          <select name="language2">
+            <option value="0" selected>Нет</option>
+            <option value="1">Население</option>
+            <option value="2">Площадь</option>
+            <option value="3">Место</option>
+            <option value="4">Город</option>
+            <option value="5">Континент</option>
+            <option value="6">Плотность населения</option>
+          </select>
+          по убыванию?<input type="checkbox" name="t3" value="True">
+        </p>
+        <p>Первый уровень():
+          <select name="language3">
+            <option value="0" selected>Нет</option>
+            <option value="1">Население</option>
+            <option value="2">Площадь</option>
+            <option value="3">Место</option>
+            <option value="4">Город</option>
+            <option value="5">Континент</option>
+            <option value="6">Плотность населения</option>
+          </select>
+          по убыванию?<input type="checkbox" name="t4" value="True">
+        </p>
+        <input type="button" value="Сортировать">
+        <br>
+      </form>
+    </details>
+    <br>
+    <!-- Таблица -->
+    <table border="1" align="center" cellspacing="0" cellpadding="10">
+      <tr>
+        <th>Место</th>
+        <th>Город</th>
+        <th>Континент</th>
+        <th>Страна</th>
+        <th>Население тыс. чел.</th>
+        <th>Площадь км<sup>2</sup></th>
+        <th>Плотность населения чел./км<sup>2</sup></th>
+      </tr>
+      <tr>
+        <td align="center">1</td>
+        <td>Токио — Иокогама</td>
+        <td>Азия</td>
+        <td>Япония</td>
+        <td>37785</td>
+        <td>8775</td>
+        <td>4306</td>
+      </tr>
+      <tr>
+        <td align="center">2</td>
+        <td>Джакарта</td>
+        <td>Азия</td>
+        <td>Индонезия</td>
+        <td>35386</td>
+        <td>3546</td>
+        <td>9980</td>
+      </tr>
+      <tr>
+        <td align="center">3</td>
+        <td>Дели</td>
+        <td>Азия</td>
+        <td>Индия</td>
+        <td>31190</td>
+        <td>2344</td>
+        <td>13307</td>
+      </tr>
+      <tr>
+        <td align="center">4</td>
+        <td>Гуанчжоу — Фошань</td>
+        <td>Азия</td>
+        <td>Китай</td>
+        <td>27119</td>
+        <td>4543</td>
+        <td>5970</td>
+      </tr>
+      <tr>
+        <td align="center">5</td>
+        <td>Мумбаи</td>
+        <td>Азии</td>
+        <td>Индия</td>
+        <td>25189</td>
+        <td>1046</td>
+        <td>24073</td>
+      </tr>
+      <tr>
+        <td align="center">6</td>
+        <td>Манила</td>
+        <td>Азия</td>
+        <td>Филиппины</td>
+        <td>24156</td>
+        <td>1911</td>
+        <td>12638</td>
+      </tr>
+      <tr>
+        <td align="center">7</td>
+        <td>Шанхай</td>
+        <td>Азия</td>
+        <td>Китай</td>
+        <td>24042</td>
+        <td>4333</td>
+        <td>5549</td>
+      </tr>
+      <tr>
+        <td align="center">8</td>
+        <td>Сеул</td>
+        <td>Азия</td>
+        <td>Республика Корея</td>
+        <td>23225</td>
+        <td>2769</td>
+        <td>8388</td>
+      </tr>
+      <tr>
+        <td align="center">9</td>
+        <td>Каир</td>
+        <td>Африка</td>
+        <td>Египет</td>
+        <td>22679</td>
+        <td>2696</td>
+        <td>8412</td>
+      </tr>
+      <tr>
+        <td align="center">10</td>
+        <td>Мехико</td>
+        <td>Северной Америка</td>
+        <td>Мексика</td>
+        <td>21905</td>
+        <td>2530</td>
+        <td>8657</td>
+      </tr>
+      <tr>
+        <td align="center">11</td>
+        <td>Калькутта</td>
+        <td>Азия</td>
+        <td>Индия</td>
+        <td>21747</td>
+        <td>1352</td>
+        <td>16085</td>
+      </tr>
+      <tr>
+        <td align="center">12</td>
+        <td>Сан-Паулу</td>
+        <td>Сан-Паулу</td>
+        <td>Бразилия</td>
+        <td>21486</td>
+        <td>3649</td>
+        <td>5888</td>
+      </tr>
+      <tr>
+        <td align="center">13</td>
+        <td>Нью-Йорк</td>
+        <td>Северной Америка</td>
+        <td>США</td>
+        <td>21396</td>
+        <td>11344</td>
+        <td>1886</td>
+      </tr>
+      <tr>
+        <td align="center">14</td>
+        <td>Карачи</td>
+        <td>Азия</td>
+        <td>Пакистан</td>
+        <td>20249</td>
+        <td>1124</td>
+        <td>18014</td>
+      </tr>
+      <tr>
+        <td align="center">15</td>
+        <td>Дакка</td>
+        <td>Азия</td>
+        <td>Бангладеш</td>
+        <td>19134</td>
+        <td>619</td>
+        <td>30911</td>
+      </tr>
+      <tr>
+        <td align="center">16</td>
+        <td>Бангкок</td>
+        <td>Азия</td>
+        <td>Таиланд</td>
+        <td>18884</td>
+        <td>619</td>
+        <td>5904</td>
+      </tr>
+      <tr>
+        <td align="center">17</td>
+        <td>Пекин</td>
+        <td>Азия</td>
+        <td>Китай</td>
+        <td>18883</td>
+        <td>4284</td>
+        <td>4408</td>
+      </tr>
+      <tr>
+        <td align="center">18</td>
+        <td>Москва</td>
+        <td>Европа</td>
+        <td>Россия</td>
+        <td>17878</td>
+        <td>6643</td>
+        <td>2691</td>
+      </tr>
+      <tr>
+        <td align="center">19</td>
+        <td>Шэньчжэнь</td>
+        <td>Азия</td>
+        <td>Китай</td>
+        <td>17778</td>
+        <td>1808</td>
+        <td>9834</td>
+      </tr>
+      <tr>
+        <td align="center">20</td>
+        <td>Буэнос-Айрес</td>
+        <td>Южной Америка</td>
+        <td>Аргентина</td>
+        <td>15748</td>
+        <td>3437</td>
+        <td>4582</td>
+      </tr>
+      <tr>
+        <td align="center">21</td>
+        <td>Лос-Анджелес</td>
+        <td>Северная Америка</td>
+        <td>США</td>
+        <td>15587</td>
+        <td>6918</td>
+        <td>2253</td>
+      </tr>
+      <tr>
+        <td align="center">22</td>
+        <td>Йоханнесбург — Экурхулени</td>
+        <td>Африка</td>
+        <td>ЮАР</td>
+        <td>15551</td>
+        <td>4040</td>
+        <td>3849</td>
+      </tr>
+      <tr>
+        <td align="center">23</td>
+        <td>Бангалор</td>
+        <td>Азия</td>
+        <td>Индия</td>
+        <td>15257</td>
+        <td>1743</td>
+        <td>8753</td>
+      </tr>
+      <tr>
+        <td align="center">24</td>
+        <td>Чэнду</td>
+        <td>Азия</td>
+        <td>Китай</td>
+        <td>15016</td>
+        <td>1935</td>
+        <td>7761</td>
+      </tr>
+      <tr>
+        <td align="center">25</td>
+        <td>Хошимин</td>
+        <td>Азия</td>
+        <td>Вьетнам</td>
+        <td>14953</td>
+        <td>2165</td>
+        <td>6906</td>
+      </tr>
+      <tr>
+        <td align="center">26</td>
+        <td>Осака — Кобе — Киото</td>
+        <td>Азия</td>
+        <td>Япония</td>
+        <td>14916</td>
+        <td>3020</td>
+        <td>4939</td>
+      </tr>
+      <tr>
+        <td align="center">27</td>
+        <td>Лагос</td>
+        <td>Африка</td>
+        <td>Нигерия</td>
+        <td>14540</td>
+        <td>2585</td>
+        <td>5625</td>
+      </tr>
+      <tr>
+        <td align="center">28</td>
+        <td>Стамбул</td>
+        <td>Европа</td>
+        <td>Турция</td>
+        <td>14 441</td>
+        <td>1471</td>
+        <td>9816</td>
+      </tr>
+      <tr>
+        <td align="center">29</td>
+        <td>Лахор</td>
+        <td>Азия</td>
+        <td>Пакистан</td>
+        <td>13504</td>
+        <td>945</td>
+        <td>14285</td>
+      </tr>
+      <tr>
+        <td align="center">30</td>
+        <td>Киншаса</td>
+        <td>Африка</td>
+        <td>ДР Конго</td>
+        <td>13493</td>
+        <td>518</td>
+        <td>26048</td>
+      </tr>
+      <tr>
+        <td align="center">31</td>
+        <td>Тегеран</td>
+        <td>Азия</td>
+        <td>Иран</td>
+        <td>13382</td>
+        <td>1704</td>
+        <td>7852</td>
+      </tr>
+      <tr>
+        <td align="center">32</td>
+        <td>Чунцин</td>
+        <td>Азия</td>
+        <td>Китай</td>
+        <td>12653</td>
+        <td>1580</td>
+        <td>8009</td>
+      </tr>
+      <tr>
+        <td align="center">33</td>
+        <td>Рио-де-Жанейро</td>
+        <td>Южной Америка</td>
+        <td>Бразилия</td>
+        <td>12306</td>
+        <td>2020</td>
+        <td>6091</td>
+      </tr>
+      <tr>
+        <td align="center">34</td>
+        <td>Сиань</td>
+        <td>Азия</td>
+        <td>Китай</td>
+        <td>12 211</td>
+        <td>1826</td>
+        <td>6688</td>
+      </tr>
+      <tr>
+        <td align="center">35</td>
+        <td>Ченнаи</td>
+        <td>Азия</td>
+        <td>Индия</td>
+        <td>11 570</td>
+        <td>1225</td>
+        <td>9444</td>
+      </tr>
+      <tr>
+        <td align="center">36</td>
+        <td>Париж</td>
+        <td>Европа</td>
+        <td>Франция</td>
+        <td>11 108</td>
+        <td>2854</td>
+        <td>3893</td>
+      </tr>
+      <tr>
+        <td align="center">37</td>
+        <td>Чжэнчжоу</td>
+        <td>Азия</td>
+        <td>Китай</td>
+        <td>11 068</td>
+        <td>1785</td>
+        <td>6202</td>
+      </tr>
+      <tr>
+        <td align="center">38</td>
+        <td>Луанда</td>
+        <td>Африка</td>
+        <td>Ангола</td>
+        <td>10 914</td>
+        <td>1005</td>
+        <td>10861</td>
+      </tr>
+      <tr>
+        <td align="center">39</td>
+        <td>Лондон</td>
+        <td>Европа</td>
+        <td>Великобритания</td>
+        <td>10 803</td>
+        <td>1738</td>
+        <td>6216</td>
+      </tr>
+      <tr>
+        <td align="center">40</td>
+        <td>Дунгуань</td>
+        <td>Азия</td>
+        <td>Китай</td>
+        <td>10 753</td>
+        <td>1759</td>
+        <td>6115</td>
+      </tr>
+      <tr>
+        <td align="center">41</td>
+        <td>Лима</td>
+        <td>Южная Америка</td>
+        <td>Перу</td>
+        <td>10556</td>
+        <td>891</td>
+        <td>11848</td>
+      </tr>
+      <tr>
+        <td align="center">42</td>
+        <td>Ухань</td>
+        <td>Азия</td>
+        <td>Китай</td>
+        <td>10353</td>
+        <td>1821</td>
+        <td>5686</td>
+      </tr>
+      <tr>
+        <td align="center">43</td>
+        <td>Богота</td>
+        <td>Южной Америка</td>
+        <td>Колумбия</td>
+        <td>10252</td>
+        <td>562</td>
+        <td>18241</td>
+      </tr>
+      <tr>
+        <td align="center">44</td>
+        <td>Тяньцзинь</td>
+        <td>Азия</td>
+        <td>Китай</td>
+        <td>10047</td>
+        <td>2813</td>
+        <td>3572</td>
+      </tr>
+      <tr>
+        <td align="center">45</td>
+        <td>Хайдарабад</td>
+        <td>Азия</td>
+        <td>Индия</td>
+        <td>9797</td>
+        <td>1689</td>
+        <td>5802</td>
+      </tr>
+      <tr>
+        <td align="center">46</td>
+        <td>Тайбэй</td>
+        <td>Азия</td>
+        <td>Тайвань</td>
+        <td>9662</td>
+        <td>1090</td>
+        <td>8861</td>
+      </tr>
+      <tr>
+        <td align="center">47</td>
+        <td>Ханчжоу</td>
+        <td>Азия</td>
+        <td>Китай</td>
+        <td>9618</td>
+        <td>1344</td>
+        <td>7155</td>
+      </tr>
+      <tr>
+        <td align="center">48</td>
+        <td>Нагоя</td>
+        <td>Азия</td>
+        <td>Япония</td>
+        <td>9439</td>
+        <td>3704</td>
+        <td>2549</td>
+      </tr>
+      <tr>
+        <td align="center">49</td>
+        <td>Куала-Лумпур</td>
+        <td>Азия</td>
+        <td>Малайзия</td>
+        <td>9387</td>
+        <td>2163</td>
+        <td>4341</td>
+      </tr>
+      <tr>
+        <td align="center">50</td>
+        <td>Чикаго</td>
+        <td>Северной Америка</td>
+        <td>США</td>
+        <td>8954</td>
+        <td>6532</td>
+        <td>1371</td>
+      </tr>
+    </table>
+
+  </body>
+
+</html>
